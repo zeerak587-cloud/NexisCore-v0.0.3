@@ -1,6 +1,0 @@
-safe_mode = true 
-# Whether to enable safe mode, which prevents loss of data by safeguarding against accidental deletions and modifications
-confirm_delete = true 
-# Whether to ask for confirmation before deleting files
-symbol_for_root = R
-# The symbol used to represent the root directory in the shell
