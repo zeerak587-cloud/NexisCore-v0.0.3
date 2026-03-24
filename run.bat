@@ -1,18 +1,23 @@
 @echo off
-setlocal
+title NexisCore Run
 
-set EXE_PATH=%~dp0target\release\nexiscore.exe
+echo ==============================
+echo Starting NexisCore...
+echo ==============================
 
-if not exist "%EXE_PATH%" (
-    echo NexisCore is not built yet.
-    echo Run build.bat first.
-    pause
-    exit /b
+if not exist "target\release\nexiscore.exe" (
+    echo [INFO] No build found. Building now...
+    cargo build --release
 )
 
-echo Starting NexisCore...
-echo.
-
-"%EXE_PATH%"
+if exist "target\release\nexiscore.exe" (
+    echo.
+    echo [OK] Launching NexisCore...
+    echo.
+    target\release\nexiscore.exe
+) else (
+    echo.
+    echo [ERROR] Could not find executable.
+)
 
 pause
