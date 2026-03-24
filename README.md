@@ -237,7 +237,8 @@ NexisCore/
 
 ## 📜 License
 
-This project is currently under development. License to be determined.
+Do whatever you want just make sure to put my name in the credits area my name is "Zeerak Khan Pakistan"
+also the logo is strictly protected against copyright
 
 ---
 
